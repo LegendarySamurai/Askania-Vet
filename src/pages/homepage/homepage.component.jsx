@@ -12,9 +12,7 @@ const HomePage = () => {
 	return (
 		<div className="homePage">
 			<section className="section-1">
-				<Container>
-
-				</Container>
+				{/*<Container></Container>*/}
 			</section>
 
 			<section className="section-2">
