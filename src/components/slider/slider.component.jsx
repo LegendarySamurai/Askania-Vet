@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 
-import dog1 from './../../assets/slider/dog-1.jpg';
-import dog2 from './../../assets/slider/dog-2.jpg';
-import dog3 from './../../assets/slider/dog-3.jpg';
-import dog4 from './../../assets/slider/dog-4.jpg';
-import dog5 from './../../assets/slider/dog-5.jpg';
+import dog1 from '../../assets/images/carousel/home/dog-1.jpg';
+import dog2 from '../../assets/images/carousel/home/dog-2.jpg';
+import dog3 from '../../assets/images/carousel/home/dog-3.jpg';
+import dog4 from '../../assets/images/carousel/home/dog-4.jpg';
+import dog5 from '../../assets/images/carousel/home/dog-5.jpg';
 
 import './slider.styles.scss';
 

@@ -4,7 +4,7 @@ import { Container } from '@material-ui/core';
 
 import './header.styles.scss';
 
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/images/logo/logo__askania_orig.png';
 
 const Header = () => {
 	return (
