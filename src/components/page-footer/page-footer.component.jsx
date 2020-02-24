@@ -15,7 +15,7 @@ const PageFooter = () => (
 	>
 		<Container maxWidth={ 'xl' }>
 			<Grid container component={'div'}>
-				<Grid xs={12} component={'div'}>
+				<Grid item xs={12} component={'div'}>
 					<p style={{ padding: '1rem 0', textAlign: 'right', fontSize: '.875rem' }}>
 						Аскания Вет. Все права защищены. 2020
 					</p>

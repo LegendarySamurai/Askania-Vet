@@ -48,7 +48,7 @@ const PageHeader = () => {
 
 	const sideList = side => (
 		<div
-			className={ classes.list }
+			className={ `${ classes.list }` }
 			role="presentation"
 			onClick={ toggleDrawer(side, false) }
 			onKeyDown={ toggleDrawer(side, false) }
@@ -79,7 +79,7 @@ const PageHeader = () => {
 						{ name: 'Доп. Страница 1', key: 'additional page 1', routePath: '/' },
 						{ name: 'Доп. Страница 2', key: 'additional page 2', routePath: '/' },
 						{ name: 'Доп. Страница 3', key: 'additional page 3', routePath: '/' },
-						]
+					]
 						.map(({ name, key, routePath }) => (
 							<ListItem component={ 'li' } key={ key }>
 								<Link
@@ -95,13 +95,13 @@ const PageHeader = () => {
 	);
 
 	return (
-		<AppBar className={ 'page-header' } position={ 'static' } color={ 'default' }>
+		<AppBar className={ 'page-header' } position={ 'fixed' } color={ 'default' }>
 			<Container maxWidth={ 'xl' }>
-				<Grid container spacing={ 2 } component={'div'}>
+				<Grid container spacing={ 2 } component={ 'div' }>
 					<Grid
 						item
 						xs={ 'auto' }
-						component={'div'}
+						component={ 'div' }
 						style={ { display: 'flex', justifyContent: 'center', alignItems: 'center' } }
 					>
 						<IconButton
@@ -114,7 +114,7 @@ const PageHeader = () => {
 							<MenuIcon/>
 						</IconButton>
 					</Grid>
-					<Grid item xs={ 'auto' } component={'div'}>
+					<Grid item xs={ 'auto' } component={ 'div' }>
 						<Link to="/" className="brand-logo">
 							<img src={ askaniaLogo } alt="logo"/>
 						</Link>

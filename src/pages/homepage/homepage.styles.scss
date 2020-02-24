@@ -1,4 +1,15 @@
-.homePage {}
+.home-page {
+  .head-section-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-with-cards {
+    padding: 6rem 0;
+  }
+}
+
+
 
 .image-container {
   width: 100%;
@@ -13,4 +24,8 @@ img {
   line-height: 2;
   padding: 2rem;
   text-align: center;
+}
+
+.section-4 {
+  padding: 2rem 0;
 }

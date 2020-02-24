@@ -13,7 +13,7 @@ function App () {
 			<PageHeader/>
 			<main>
 				<Switch>
-					{/*<Route exact path="/" component={ HomePage }/>*/}
+					<Route exact path="/" component={ HomePage }/>
 					{/*<Route exact path="/about" component={ AboutUs }/>*/}
 				</Switch>
 			</main>
