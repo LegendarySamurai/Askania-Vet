@@ -9,10 +9,12 @@ function App () {
 	return (
 		<div className="App">
 			<Header/>
-			<Switch>
-				{/*<Route exact path="/" component={ HomePage }/>*/}
-				{/*<Route exact path="/about" component={ AboutUs }/>*/}
-			</Switch>
+			<main>
+				<Switch>
+					{/*<Route exact path="/" component={ HomePage }/>*/}
+					{/*<Route exact path="/about" component={ AboutUs }/>*/}
+				</Switch>
+			</main>
 		</div>
 	);
 }
