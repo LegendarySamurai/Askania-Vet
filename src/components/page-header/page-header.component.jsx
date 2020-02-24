@@ -16,7 +16,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
-import './header.styles.scss';
+import './page-header.styles.scss';
 
 import askaniaLogo from '../../assets/images/logo/logo__askania_trimmed.png';
 
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 	},
 });
 
-const Header = () => {
+const PageHeader = () => {
 	const classes = useStyles();
 	const [state, setState] = useState({
 		top: false,
@@ -97,10 +97,11 @@ const Header = () => {
 	return (
 		<AppBar className={ 'page-header' } position={ 'static' } color={ 'default' }>
 			<Container maxWidth={ 'xl' }>
-				<Grid container spacing={ 2 }>
+				<Grid container spacing={ 2 } component={'div'}>
 					<Grid
 						item
 						xs={ 'auto' }
+						component={'div'}
 						style={ { display: 'flex', justifyContent: 'center', alignItems: 'center' } }
 					>
 						<IconButton
@@ -113,7 +114,7 @@ const Header = () => {
 							<MenuIcon/>
 						</IconButton>
 					</Grid>
-					<Grid item xs={ 'auto' }>
+					<Grid item xs={ 'auto' } component={'div'}>
 						<Link to="/" className="brand-logo">
 							<img src={ askaniaLogo } alt="logo"/>
 						</Link>
@@ -127,26 +128,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
-
-/*
-import { Container, Grid } from '@material-ui/core';
-
-<header className="page-header">
-	<Container maxWidth="xl">
-		<Grid item xs='auto' component={ 'div' }>
-			<Link to="/" className="brand-logo">
-				<img src={ askaniaLogo } alt="logo"/>
-			</Link>
-		</Grid>
-
-
-		<div className="options">
-			<Link className="about-us" to="/about">О нас</Link>
-			<Link className="our-services" to="/services">Услуги</Link>
-			<Link className="shop" to="/shop">Магазин</Link>
-		</div>
-	</Container>
-</header>
-
-*/
+export default PageHeader;
