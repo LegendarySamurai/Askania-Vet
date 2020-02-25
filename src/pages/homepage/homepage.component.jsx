@@ -59,8 +59,8 @@ const carouselTwoSettings = {
 	settings: {
 		className: 'home-page-carousel-two',
 		arrows: true,
-		nextArrow: <CarouselCustomArrow />,
-		prevArrow: <CarouselCustomArrow />,
+		nextArrow: <CarouselCustomArrow/>,
+		prevArrow: <CarouselCustomArrow/>,
 		dots: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -83,20 +83,20 @@ const HomePage = () => {
 			</section>
 
 			<section className="section-with-cards">
-				<Container maxWidth="lg" style={ { padding: '0' } }>
-					<Grid container component={ 'div' }>
+				<Container maxWidth="lg">
+					<Grid container spacing={ 4 } component={ 'div' }>
 						<Grid item xs={ 12 } component={ 'div' }>
 							<SectionTitle text={ 'Секция с карточками' }/>
 						</Grid>
 					</Grid>
-					<Grid container component={ 'div' }>
-						<Grid item xs={ 6 } md={ 4 } component={ 'div' }>
+					<Grid container spacing={ 4 } component={ 'div' }>
+						<Grid item xs={ 12 } md={ 4 } component={ 'div' }>
 							<CardItem/>
 						</Grid>
-						<Grid item xs={ 6 } md={ 4 } component={ 'div' }>
+						<Grid item xs={ 12 } md={ 4 } component={ 'div' }>
 							<CardItem/>
 						</Grid>
-						<Grid item xs={ 6 } md={ 4 } component={ 'div' }>
+						<Grid item xs={ 12 } md={ 4 } component={ 'div' }>
 							<CardItem/>
 						</Grid>
 					</Grid>
