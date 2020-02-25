@@ -2,7 +2,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import "../../styles/scss/utils/variables";
 
-.home-page-carousel {
+.home-page-carousel-one {
   .slide-content {
     position: relative;
     height: calc(100vh - #{$page-header-height-d} - 10vh);
@@ -28,10 +28,8 @@
   }
 }
 
-.slick-center {
-  img {
-    opacity: 1;
-    -ms-transform: scale(1.08);
-    transform: scale(1.08);
+.home-page-carousel-two {
+  .slick-slide {
+    padding: 0 .25rem;
   }
 }

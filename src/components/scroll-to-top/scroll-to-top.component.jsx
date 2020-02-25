@@ -13,7 +13,7 @@ const ScrollToTop = (props) => {
 	const [visibility, setVisibility] = useState(false);
 
 	const toggleVisibility = () => {
-		if (window.pageYOffset > 800) {
+		if (window.pageYOffset > 600) {
 			setVisibility(true);
 		}
 		else {
@@ -35,17 +35,15 @@ const ScrollToTop = (props) => {
 	}, [visibility]);
 
 	return (
-		<div>
+		<React.Fragment>
 			{
 				visibility && (
-					<div className={'scroll-to-top'} onClick={ scrollToTop }>
-						<FontAwesomeIcon
-							icon={ faAngleDoubleUp }
-							style={ { 'color': '#999' } }/>
+					<div className={ 'scroll-to-top' } onClick={ scrollToTop }>
+						<FontAwesomeIcon icon={ faAngleDoubleUp }/>
 					</div>
 				)
 			}
-		</div>
+		</React.Fragment>
 	);
 };
 
