@@ -2,7 +2,7 @@
   "name": "askania-vet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https:/h/legendarysamurai.github.io/Askania-Vet",
+  "homepage": "https://askania-vet.herokuapp.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
