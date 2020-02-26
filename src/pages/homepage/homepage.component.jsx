@@ -74,9 +74,25 @@ const HomePage = () => {
 		<div className="home-page">
 			<section className="head-section">
 				<Container maxWidth="xl" className={ 'head-section-container' }>
-					<Grid component={ 'div' }>
+					<Grid container component={ 'div' }>
 						<Grid item xs={ 12 } component={ 'div' }>
 							<Carousel { ...carouselOneSettings }/>
+						</Grid>
+					</Grid>
+				</Container>
+			</section>
+
+			{/* features section */}
+			<section style={ { padding: '4rem 0' } }>
+				<Container maxWidth="lg">
+					<Grid container spacing={ 4 } component={ 'div' }>
+						<Grid item xs={ 12 } component={ 'div' }>
+							<SectionTitle text={ 'Секция со списком с большими иконками' }/>
+						</Grid>
+					</Grid>
+					<Grid container component={ 'div' }>
+						<Grid item xs={ 4 } component={ 'div' }>
+							{/*	feature card */}
 						</Grid>
 					</Grid>
 				</Container>
@@ -146,7 +162,7 @@ const HomePage = () => {
 
 			<section className="">
 				<Container maxWidth="xl" className={ 'head-section-container' }>
-					<Grid component={ 'div' }>
+					<Grid container component={ 'div' }>
 						<Grid item xs={ 12 } component={ 'div' }>
 							<Carousel { ...carouselTwoSettings }/>
 						</Grid>

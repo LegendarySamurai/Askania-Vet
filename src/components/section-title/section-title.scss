@@ -1,5 +1,21 @@
-.section-title {
+.section-headline-container {
   padding: 0 0 3rem;
+
+}
+
+.section-headline {
   font-size: 2.5rem;
+  color: #444;
   text-align: center;
+}
+
+.section-headline-decoration {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.section-headline-decoration-inner {
+  max-width: 80%;
+  border-top: 1px solid #eee;
 }
